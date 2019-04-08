@@ -15,6 +15,7 @@
 //    http://newosxbook.com/articles/MDGA.html
 //    http://newosxbook.com/QiLin/
 
+// This is csflags that support iOS12.
 // Only test on iPhone7(iPhone9,1) + iOS12.0
 
 static void nullFunc(char *a1,...) {}; // suppress debug

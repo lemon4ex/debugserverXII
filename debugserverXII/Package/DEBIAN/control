@@ -1,0 +1,17 @@
+Package: net.ymlab.dev.debugserverXII
+Name: debugserverXII
+Version: 0.1-1
+Description: 
+Section: System
+Depends: firmware (>= 7.0)
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: h4ck
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+

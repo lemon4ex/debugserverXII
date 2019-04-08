@@ -11,6 +11,9 @@
 		C9B78E7A225AF06F004B25EC /* qilin12.o in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B78E79225AF06F004B25EC /* qilin12.o */; };
 		C9B78E7F225AF4A2004B25EC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B78E7E225AF4A1004B25EC /* CoreFoundation.framework */; };
 		C9B78E81225AF4C1004B25EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B78E80225AF4C1004B25EC /* Foundation.framework */; };
+		C9B78E89225B341D004B25EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B78E80225AF4C1004B25EC /* Foundation.framework */; };
+		C9B78E9A225B341D004B25EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B78E99225B341D004B25EC /* main.m */; };
+		C9B78E9E225B34AF004B25EC /* qilin12.o in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B78E79225AF06F004B25EC /* qilin12.o */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,17 @@
 		C9B78E7E225AF4A1004B25EC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		C9B78E80225AF4C1004B25EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9B78E82225AFB71004B25EC /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		C9B78E88225B341D004B25EC /* debugserverXII */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = debugserverXII; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B78E8D225B341D004B25EC /* preinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = preinst; path = Package/DEBIAN/preinst; sourceTree = "<group>"; };
+		C9B78E8E225B341D004B25EC /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
+		C9B78E8F225B341D004B25EC /* postrm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postrm; path = Package/DEBIAN/postrm; sourceTree = "<group>"; };
+		C9B78E90225B341D004B25EC /* prerm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = prerm; path = Package/DEBIAN/prerm; sourceTree = "<group>"; };
+		C9B78E91225B341D004B25EC /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		C9B78E92225B341D004B25EC /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		C9B78E94225B341D004B25EC /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		C9B78E95225B341D004B25EC /* debugserverXII-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "debugserverXII-Prefix.pch"; sourceTree = "<group>"; };
+		C9B78E98225B341D004B25EC /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
+		C9B78E99225B341D004B25EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +58,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C9B78E85225B341D004B25EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B78E89225B341D004B25EC /* Foundation.framework in Frameworks */,
+				C9B78E9E225B34AF004B25EC /* qilin12.o in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -51,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				C9B78E62225AEF2F004B25EC /* csflags */,
+				C9B78E8A225B341D004B25EC /* debugserverXII */,
 				C9B78E61225AEF2F004B25EC /* Products */,
 				C9B78E7B225AF449004B25EC /* Frameworks */,
 			);
@@ -60,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				C9B78E60225AEF2F004B25EC /* csflags */,
+				C9B78E88225B341D004B25EC /* debugserverXII */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +159,63 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C9B78E8A225B341D004B25EC /* debugserverXII */ = {
+			isa = PBXGroup;
+			children = (
+				C9B78E99225B341D004B25EC /* main.m */,
+				C9B78E8B225B341D004B25EC /* Package */,
+				C9B78E93225B341D004B25EC /* Supporting Files */,
+			);
+			path = debugserverXII;
+			sourceTree = "<group>";
+		};
+		C9B78E8B225B341D004B25EC /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				C9B78E8C225B341D004B25EC /* DEBIAN */,
+				C9B78E96225B341D004B25EC /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		C9B78E8C225B341D004B25EC /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				C9B78E8D225B341D004B25EC /* preinst */,
+				C9B78E8E225B341D004B25EC /* postinst */,
+				C9B78E8F225B341D004B25EC /* postrm */,
+				C9B78E90225B341D004B25EC /* prerm */,
+				C9B78E91225B341D004B25EC /* control */,
+				C9B78E92225B341D004B25EC /* control.txt */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		C9B78E93225B341D004B25EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9B78E94225B341D004B25EC /* PackageVersion.plist */,
+				C9B78E95225B341D004B25EC /* debugserverXII-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9B78E96225B341D004B25EC /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				C9B78E97225B341D004B25EC /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		C9B78E97225B341D004B25EC /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				C9B78E98225B341D004B25EC /* 0xdeadfa11 */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,6 +237,24 @@
 			productReference = C9B78E60225AEF2F004B25EC /* csflags */;
 			productType = "com.apple.product-type.tool";
 		};
+		C9B78E87225B341D004B25EC /* debugserverXII */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9B78E9B225B341D004B25EC /* Build configuration list for PBXNativeTarget "debugserverXII" */;
+			buildPhases = (
+				C9B78E83225B341D004B25EC /* ShellScript */,
+				C9B78E84225B341D004B25EC /* Sources */,
+				C9B78E85225B341D004B25EC /* Frameworks */,
+				C9B78E86225B341D004B25EC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = debugserverXII;
+			productName = debugserverXII;
+			productReference = C9B78E88225B341D004B25EC /* debugserverXII */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,6 +264,9 @@
 				LastUpgradeCheck = 0940;
 				TargetAttributes = {
 					C9B78E5F225AEF2F004B25EC = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					C9B78E87225B341D004B25EC = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -181,6 +284,7 @@
 			projectRoot = "";
 			targets = (
 				C9B78E5F225AEF2F004B25EC /* csflags */,
+				C9B78E87225B341D004B25EC /* debugserverXII */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +316,32 @@
 			shellPath = /bin/sh;
 			shellScript = "/opt/EasyDev/bin/ed --xcbp";
 		};
+		C9B78E83225B341D004B25EC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# rm -rf \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/*\"\n# cp -rf \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/PalmRiskSvr\" \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/\"\n\n# 自动更新deb包版本号\necho $CONFIGURATION\nif [ \"Release\" == \"${CONFIGURATION}\" ]\nthen\npackInfoPlist=\"${PROJECT_DIR}/${TARGET_NAME}/PackageVersion.plist\"\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print PackageRevision\" \"${packInfoPlist}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :PackageRevision $buildNumber\" \"${packInfoPlist}\"\necho \"build number increase\"\nfi";
+		};
+		C9B78E86225B341D004B25EC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/EasyDev/bin/ed --xcbp";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -220,6 +350,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9B78E72225AEF2F004B25EC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9B78E84225B341D004B25EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B78E9A225B341D004B25EC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +501,62 @@
 			};
 			name = Debug;
 		};
+		C9B78E9C225B341D004B25EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = csflags/Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B8J3GNFE6;
+				ENABLE_BITCODE = NO;
+				EasyDevAlsoBuildZipPackageOnAnyBuild = NO;
+				EasyDevBuildPackageOnAnyBuild = NO;
+				EasyDevClearUiCacheOnInstall = NO;
+				EasyDevCopyExecutableOnAnyBuild = NO;
+				EasyDevDeviceIP = "";
+				EasyDevDevicePort = "";
+				EasyDevInstallOnAnyBuild = NO;
+				EasyDevInstallOnProfiling = NO;
+				EasyDevKillProcessName = "";
+				EasyDevKillProcessOnInstall = NO;
+				EasyDevUsePackageVersionPList = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "debugserverXII/debugserverXII-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+		C9B78E9D225B341D004B25EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = csflags/Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B8J3GNFE6;
+				ENABLE_BITCODE = NO;
+				EasyDevAlsoBuildZipPackageOnAnyBuild = NO;
+				EasyDevBuildPackageOnAnyBuild = NO;
+				EasyDevClearUiCacheOnInstall = NO;
+				EasyDevCopyExecutableOnAnyBuild = NO;
+				EasyDevDeviceIP = "";
+				EasyDevDevicePort = "";
+				EasyDevInstallOnAnyBuild = NO;
+				EasyDevInstallOnProfiling = NO;
+				EasyDevKillProcessName = "";
+				EasyDevKillProcessOnInstall = NO;
+				EasyDevUsePackageVersionPList = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "debugserverXII/debugserverXII-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -380,6 +574,15 @@
 			buildConfigurations = (
 				C9B78E76225AEF2F004B25EC /* Release */,
 				C9B78E77225AEF2F004B25EC /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9B78E9B225B341D004B25EC /* Build configuration list for PBXNativeTarget "debugserverXII" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9B78E9C225B341D004B25EC /* Release */,
+				C9B78E9D225B341D004B25EC /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

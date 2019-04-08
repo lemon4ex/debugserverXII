@@ -21,7 +21,6 @@ product/
 !iTunesArtwork
 Build/
 build/
-Packages/
 Resources/
 LatestBuild/
 Pods/

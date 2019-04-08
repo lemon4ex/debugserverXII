@@ -470,6 +470,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
@@ -498,6 +499,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};

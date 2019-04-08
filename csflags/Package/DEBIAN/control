@@ -1,6 +1,6 @@
 Package: net.ymlab.dev.csflags
 Name: csflags
-Version: 0.1-1
+Version: 1.0-2
 Description: 
 Section: System
 Depends: firmware (>= 7.0)

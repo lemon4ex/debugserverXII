@@ -1,6 +1,6 @@
 ### 项目简介
 
-用于解决在系统为`iOS12`的越狱设备上使用debugserver调试应用时出现 `Terminated due to code signing error` 错误的问题。
+用于解决在`iOS12`的越狱设备上使用debugserver调试应用时出现 `Terminated due to code signing error` 的问题。
 
 解决方案使用大神[@Morpheus______](http://twitter.com/Morpheus______)写的[QiLin(麒麟)](http://newosxbook.com/QiLin/)工具，思路参考他写的[一篇文章](http://newosxbook.com/articles/MDGA.html)
 

@@ -64,32 +64,23 @@ int main (int argc, const char * argv[])
     }
     NSDictionary *offsets = [NSDictionary dictionaryWithContentsOfFile:@"/jb/offsets.plist"];
     NSString *stringBase = offsets[@"KernelBase"];
-//    NSString *stringSlide = offsets[@"KernelSlide"];
-//    NSString *stringTask = offsets[@"KernelTask"];
+
     printf("[+] Read offsets from /jb/offsets.plist\n");
     uint64_t kernel_base = 0;
-//    uint64_t kernel_slide = 0;
-//    uint64_t kernel_task = 0;
+
     ret = sscanf(stringBase.UTF8String, "0x%llx",&kernel_base);
     if (!ret) {
         fprintf(stderr,"[-] Read kernel base from hex value failed!\n");
         return ret;
     }
     
-//    ret = sscanf(stringSlide.UTF8String, "0x%llx",&kernel_slide);
-//    if (!ret) {
-//        fprintf(stderr,"[-] Read kernel slide from hex value failed!\n");
-//        return ret;
-//    }
-//    ret = sscanf(stringTask.UTF8String, "0x%llx",&kernel_task);
-//    if (!ret) {
-//        fprintf(stderr,"[-] Read kernel task from hex value failed!\n");
-//        return ret;
-//    }
-    
     printf("[+] Kernel: port 0x%x, base 0x%llx\n", kernel_task_port,kernel_base);
     int rc = initQiLin(kernel_task_port, kernel_base);
     if (rc) { fprintf(stderr,"[-] Qilin Initialization failed!\n"); return rc;}
+    
+    // if you want to support your device, please uncomment next line
+//    setKernelSymbol("_kernproc", kernel_task);
+    
     ret = setCSFlagsForPid(pid,0x4);
     if (ret) {
         fprintf(stderr,"[-] Call setCSFlagsForPid failed!\n");

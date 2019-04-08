@@ -37,6 +37,8 @@ iPhone-7:~ root# ldid -S/jb/entitlements.plist -M -K/usr/share/jailbreak/signcer
 iPhone-7:~ root# /jb/debugserverXII localhost:1111 -a SpringBoard
 ```
 
+注意：`debugserver`的路径必须为`/usr/bin/debugserver`，`debugserverXII`需要用到它。
+
 由于`debugserverXII`是`debugserver`的包装，因此它可以使用的参数和`debugserver`一致。
 
 ### 已知问题

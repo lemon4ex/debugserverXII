@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9B78E72225AEF2F004B25EC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C9B78E71225AEF2F004B25EC /* main.c */; };
+		C9B78E72225AEF2F004B25EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B78E71225AEF2F004B25EC /* main.m */; };
+		C9B78E7A225AF06F004B25EC /* qilin12.o in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B78E79225AF06F004B25EC /* qilin12.o */; };
+		C9B78E7F225AF4A2004B25EC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B78E7E225AF4A1004B25EC /* CoreFoundation.framework */; };
+		C9B78E81225AF4C1004B25EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B78E80225AF4C1004B25EC /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +24,13 @@
 		C9B78E6C225AEF2F004B25EC /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		C9B78E6D225AEF2F004B25EC /* csflags-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "csflags-Prefix.pch"; sourceTree = "<group>"; };
 		C9B78E70225AEF2F004B25EC /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
-		C9B78E71225AEF2F004B25EC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C9B78E71225AEF2F004B25EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9B78E78225AEF53004B25EC /* QiLin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiLin.h; sourceTree = "<group>"; };
+		C9B78E79225AF06F004B25EC /* qilin12.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = qilin12.o; sourceTree = "<group>"; };
+		C9B78E7C225AF449004B25EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9B78E7E225AF4A1004B25EC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C9B78E80225AF4C1004B25EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9B78E82225AFB71004B25EC /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B78E81225AF4C1004B25EC /* Foundation.framework in Frameworks */,
+				C9B78E7F225AF4A2004B25EC /* CoreFoundation.framework in Frameworks */,
+				C9B78E7A225AF06F004B25EC /* qilin12.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,7 @@
 			children = (
 				C9B78E62225AEF2F004B25EC /* csflags */,
 				C9B78E61225AEF2F004B25EC /* Products */,
+				C9B78E7B225AF449004B25EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +67,10 @@
 		C9B78E62225AEF2F004B25EC /* csflags */ = {
 			isa = PBXGroup;
 			children = (
-				C9B78E71225AEF2F004B25EC /* main.c */,
+				C9B78E78225AEF53004B25EC /* QiLin.h */,
+				C9B78E79225AF06F004B25EC /* qilin12.o */,
+				C9B78E71225AEF2F004B25EC /* main.m */,
+				C9B78E82225AFB71004B25EC /* Entitlements.plist */,
 				C9B78E63225AEF2F004B25EC /* Package */,
 				C9B78E6B225AEF2F004B25EC /* Supporting Files */,
 			);
@@ -106,6 +122,16 @@
 				C9B78E70225AEF2F004B25EC /* 0xdeadfa11 */,
 			);
 			name = bin;
+			sourceTree = "<group>";
+		};
+		C9B78E7B225AF449004B25EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9B78E80225AF4C1004B25EC /* Foundation.framework */,
+				C9B78E7E225AF4A1004B25EC /* CoreFoundation.framework */,
+				C9B78E7C225AF449004B25EC /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9B78E72225AEF2F004B25EC /* main.c in Sources */,
+				C9B78E72225AEF2F004B25EC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +310,7 @@
 		C9B78E76225AEF2F004B25EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = csflags/Entitlements.plist;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9B8J3GNFE6;
@@ -302,6 +329,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "csflags/csflags-Prefix.pch";
 				INSTALL_PATH = /usr/bin;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,6 +338,7 @@
 		C9B78E77225AEF2F004B25EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = csflags/Entitlements.plist;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9B8J3GNFE6;
@@ -328,6 +357,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "csflags/csflags-Prefix.pch";
 				INSTALL_PATH = /usr/bin;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

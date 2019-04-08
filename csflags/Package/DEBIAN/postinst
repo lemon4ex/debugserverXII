@@ -1,0 +1,6 @@
+#!/bin/sh
+
+chown root:wheel /usr/bin/csflags
+chmod 755 /usr/bin/csflags
+
+exit 0

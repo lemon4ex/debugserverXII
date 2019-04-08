@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9B78E72225AEF2F004B25EC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C9B78E71225AEF2F004B25EC /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9B78E60225AEF2F004B25EC /* csflags */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = csflags; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B78E65225AEF2F004B25EC /* preinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = preinst; path = Package/DEBIAN/preinst; sourceTree = "<group>"; };
+		C9B78E66225AEF2F004B25EC /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
+		C9B78E67225AEF2F004B25EC /* postrm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postrm; path = Package/DEBIAN/postrm; sourceTree = "<group>"; };
+		C9B78E68225AEF2F004B25EC /* prerm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = prerm; path = Package/DEBIAN/prerm; sourceTree = "<group>"; };
+		C9B78E69225AEF2F004B25EC /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		C9B78E6A225AEF2F004B25EC /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		C9B78E6C225AEF2F004B25EC /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		C9B78E6D225AEF2F004B25EC /* csflags-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "csflags-Prefix.pch"; sourceTree = "<group>"; };
+		C9B78E70225AEF2F004B25EC /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
+		C9B78E71225AEF2F004B25EC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9B78E5D225AEF2F004B25EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9B78E56225AEF2F004B25EC = {
+			isa = PBXGroup;
+			children = (
+				C9B78E62225AEF2F004B25EC /* csflags */,
+				C9B78E61225AEF2F004B25EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9B78E61225AEF2F004B25EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9B78E60225AEF2F004B25EC /* csflags */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9B78E62225AEF2F004B25EC /* csflags */ = {
+			isa = PBXGroup;
+			children = (
+				C9B78E71225AEF2F004B25EC /* main.c */,
+				C9B78E63225AEF2F004B25EC /* Package */,
+				C9B78E6B225AEF2F004B25EC /* Supporting Files */,
+			);
+			path = csflags;
+			sourceTree = "<group>";
+		};
+		C9B78E63225AEF2F004B25EC /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				C9B78E64225AEF2F004B25EC /* DEBIAN */,
+				C9B78E6E225AEF2F004B25EC /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		C9B78E64225AEF2F004B25EC /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				C9B78E65225AEF2F004B25EC /* preinst */,
+				C9B78E66225AEF2F004B25EC /* postinst */,
+				C9B78E67225AEF2F004B25EC /* postrm */,
+				C9B78E68225AEF2F004B25EC /* prerm */,
+				C9B78E69225AEF2F004B25EC /* control */,
+				C9B78E6A225AEF2F004B25EC /* control.txt */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		C9B78E6B225AEF2F004B25EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9B78E6C225AEF2F004B25EC /* PackageVersion.plist */,
+				C9B78E6D225AEF2F004B25EC /* csflags-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9B78E6E225AEF2F004B25EC /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				C9B78E6F225AEF2F004B25EC /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		C9B78E6F225AEF2F004B25EC /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				C9B78E70225AEF2F004B25EC /* 0xdeadfa11 */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9B78E5F225AEF2F004B25EC /* csflags */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9B78E75225AEF2F004B25EC /* Build configuration list for PBXNativeTarget "csflags" */;
+			buildPhases = (
+				C9B78E5B225AEF2F004B25EC /* ShellScript */,
+				C9B78E5C225AEF2F004B25EC /* Sources */,
+				C9B78E5D225AEF2F004B25EC /* Frameworks */,
+				C9B78E5E225AEF2F004B25EC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = csflags;
+			productName = csflags;
+			productReference = C9B78E60225AEF2F004B25EC /* csflags */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9B78E57225AEF2F004B25EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					C9B78E5F225AEF2F004B25EC = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = C9B78E5A225AEF2F004B25EC /* Build configuration list for PBXProject "csflags" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9B78E56225AEF2F004B25EC;
+			productRefGroup = C9B78E61225AEF2F004B25EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9B78E5F225AEF2F004B25EC /* csflags */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9B78E5B225AEF2F004B25EC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# rm -rf \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/*\"\n# cp -rf \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/PalmRiskSvr\" \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/\"\n\n# 自动更新deb包版本号\necho $CONFIGURATION\nif [ \"Release\" == \"${CONFIGURATION}\" ]\nthen\npackInfoPlist=\"${PROJECT_DIR}/${TARGET_NAME}/PackageVersion.plist\"\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print PackageRevision\" \"${packInfoPlist}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :PackageRevision $buildNumber\" \"${packInfoPlist}\"\necho \"build number increase\"\nfi";
+		};
+		C9B78E5E225AEF2F004B25EC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/EasyDev/bin/ed --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9B78E5C225AEF2F004B25EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B78E72225AEF2F004B25EC /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C9B78E73225AEF2F004B25EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EasyDevPath = /opt/EasyDev;
+				EasyDevTheosPath = /opt/theos;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/frameworks",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/include",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9B78E74225AEF2F004B25EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EasyDevPath = /opt/EasyDev;
+				EasyDevTheosPath = /opt/theos;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/frameworks",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/include",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		C9B78E76225AEF2F004B25EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B8J3GNFE6;
+				ENABLE_BITCODE = NO;
+				EasyDevAlsoBuildZipPackageOnAnyBuild = NO;
+				EasyDevBuildPackageOnAnyBuild = NO;
+				EasyDevClearUiCacheOnInstall = NO;
+				EasyDevCopyExecutableOnAnyBuild = NO;
+				EasyDevDeviceIP = "";
+				EasyDevDevicePort = "";
+				EasyDevInstallOnAnyBuild = NO;
+				EasyDevInstallOnProfiling = NO;
+				EasyDevKillProcessName = "";
+				EasyDevKillProcessOnInstall = NO;
+				EasyDevUsePackageVersionPList = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "csflags/csflags-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C9B78E77225AEF2F004B25EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B8J3GNFE6;
+				ENABLE_BITCODE = NO;
+				EasyDevAlsoBuildZipPackageOnAnyBuild = NO;
+				EasyDevBuildPackageOnAnyBuild = NO;
+				EasyDevClearUiCacheOnInstall = NO;
+				EasyDevCopyExecutableOnAnyBuild = NO;
+				EasyDevDeviceIP = "";
+				EasyDevDevicePort = "";
+				EasyDevInstallOnAnyBuild = NO;
+				EasyDevInstallOnProfiling = NO;
+				EasyDevKillProcessName = "";
+				EasyDevKillProcessOnInstall = NO;
+				EasyDevUsePackageVersionPList = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "csflags/csflags-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9B78E5A225AEF2F004B25EC /* Build configuration list for PBXProject "csflags" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9B78E73225AEF2F004B25EC /* Release */,
+				C9B78E74225AEF2F004B25EC /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9B78E75225AEF2F004B25EC /* Build configuration list for PBXNativeTarget "csflags" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9B78E76225AEF2F004B25EC /* Release */,
+				C9B78E77225AEF2F004B25EC /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9B78E57225AEF2F004B25EC /* Project object */;
+}
